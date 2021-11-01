@@ -1,18 +1,19 @@
 import React from "react";
 import "./App.css";
 import Nav from "./Nav";
-import About from "./About";
+import Cadastro from "./Cadastro";
 import Shop from "./Shop";
+import ButtonYellow from "./components/ButtonYellow";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from "./assets/logo_agrisus.svg";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/cadastro" component={Cadastro} />
           <Route path="/shop" component={Shop} />
         </Switch>
       </div>
@@ -21,8 +22,33 @@ function App() {
 }
 
 const Home = () => (
-  <div>
-    <h1>Home Page</h1>
+  <div class="home-nologin">
+    <div class="logo-div">
+      <img src={logo} alt="" />
+    </div>
+    <div className="loginInfo">
+      <label for="User">USUÁRIO</label>
+      <input
+        type="text"
+        id="User"
+        name="Name"
+        placeholder="Digite sua ID, e-mail ou cpf"
+      />
+      <label for="User">SENHA</label>
+      <input
+        type="password"
+        id="User"
+        name="Name"
+        placeholder="Digite sua senha"
+      />
+    </div>
+    <div className="switchLogin">
+      <ButtonYellow name="Entrar" />
+      <ButtonYellow name="Cadastro" />
+    </div>
+    <div className="forgetPass">
+      <a href="#">esqueceu sua senha?</a>
+    </div>
   </div>
 );
 
