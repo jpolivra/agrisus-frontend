@@ -111,6 +111,15 @@ div.switchLogin {
   gap: 20px;
 }
 
+.button-yellow {
+  background: #f9bc60;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  color: #004643;
+}
+
 /* Password Forget*/
 
 div.forgetPass {
@@ -129,4 +138,14 @@ div.forgetPass a {
   div.loginInfo input {
     width: 250px;
   }
+}
+
+/* escolhaParagrafo */
+
+div.escolhaParagrafo p {
+  font-size: 24px;
+  color: #fffffe;
+  font-weight: lighter;
+  margin-top: 40px;
+  padding: 0px 20px;
 }
