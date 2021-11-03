@@ -25,20 +25,20 @@ function CadastroConsumidor() {
           </div>
 
           <div className="classInput">
-            <label> E-mail </label>
-            <input placeholder="Digite seu e-mail" type="email"></input>
+            <label> Telefone </label>
+            <input placeholder="Digite seu telefone"></input>
           </div>
         </div>
 
         <div className="linha">
           <div className="classInput">
-            <label> Telefone </label>
-            <input placeholder="Digite seu telefone"></input>
+            <label> CPF/CNPJ </label>
+            <input placeholder="Digite seu CPF ou CNPJ" type="email"></input>
           </div>
 
           <div className="classInput">
-            <label> CPF/CNPJ </label>
-            <input placeholder="Digite seu CPF ou CNPJ" type="email"></input>
+            <label> Senha </label>
+            <input type="password" placeholder="Digite sua senha"></input>
           </div>
         </div>
 

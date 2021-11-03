@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 50px;
+  width: 300px;
+}
+
+.divisoria {
+  width: 1px;
+  height: 80px;
+  padding: 0;
+  margin: 0px 8px;
+  background: white;
+}
+
+.cadastro {
+  font-size: 1.2em;
+  color: white;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  margin: 40px 0px;
+}
+
+.info h6 {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+}
+
+.form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.linha {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+
+.classInput {
+  width: 48%;
+  margin: 0px;
+  background: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+textarea {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.termos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.termos h6 {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  margin: 0;
+  padding: 0;
+}
+
+.botao {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button-yellow {
+  background: #f9bc60;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  color: #004643;
+}
+
+.linha-inline {
+  gap: 25px;
+  flex-direction: column;
+}
+
+@media (max-width: 769px) {
+  .linha {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .classInput {
+    width: 100%;
+  }
+}
