@@ -1,5 +1,1 @@
 # Agrisus-Frontend
-
-Daniele
-
-João
