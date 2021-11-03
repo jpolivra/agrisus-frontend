@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo_agrisus_cadastro.svg";
 

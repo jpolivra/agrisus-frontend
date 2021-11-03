@@ -11,8 +11,6 @@ function CadastroConsumidor() {
         <Link to="/">
           <img src={logo} className="logo" />
         </Link>
-        <div className="divisoria"></div>
-        <span className="cadastro">Cadastro</span>
       </div>
 
       <div className="info">

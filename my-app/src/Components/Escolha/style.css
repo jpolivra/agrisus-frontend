@@ -1,0 +1,11 @@
+div.escolhaParagrafo p {
+  font-size: 24px;
+  color: #fffffe;
+  font-weight: lighter;
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+div.home-nologin {
+  text-align: center;
+}
