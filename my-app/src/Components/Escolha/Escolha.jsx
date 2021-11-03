@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo_agrisus_cadastro.svg";
+import logo from "../../assets/logo_agrisus_cadastro.svg";
 
 function Escolha() {
   return (

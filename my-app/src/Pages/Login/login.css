@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 html,
 body {
   padding: 0px;
@@ -16,22 +12,6 @@ body {
     rgba(1, 47, 45, 1) 100%
   );
   font-family: "Roboto", sans-serif;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  background: rgb(97, 124, 133);
-}
-
-.nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
 }
 
 /* Login Page Style */

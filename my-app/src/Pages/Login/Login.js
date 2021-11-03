@@ -1,26 +1,9 @@
 import React from "react";
-import "./App.css";
-import Nav from "./Nav";
-import Escolha from "./Escolha";
-import Cadastro from "./Cadastro";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import logo from "./assets/logo_agrisus.svg";
+import "./login.css";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo_agrisus.svg";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/cadastro" component={Cadastro} />
-          <Route path="/escolha" component={Escolha} />
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
-function Home() {
+function Login() {
   function takeData() {
     const userLogin = document.querySelector("#userLogin").value;
     const userPass = document.querySelector("#userPass").value;
@@ -51,7 +34,7 @@ function Home() {
         <button onClick={takeData} className="button-yellow">
           Entrar
         </button>
-        <Link to="/escolha">
+        <Link to="/cadastroConsumidor">
           <button className="button-yellow">Cadastro</button>
         </Link>
       </div>
@@ -62,4 +45,4 @@ function Home() {
   );
 }
 
-export default App;
+export default Login;
