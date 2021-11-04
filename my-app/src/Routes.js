@@ -5,11 +5,11 @@ import CadastroConsumidor from "./Pages/CadastroConsumidor/";
 import CadastroProdutor from "./Pages/CadastroProdutor/";
 import Home from "./Pages/Home/";
 import NotFound from "./Pages/Not-Found/";
+import Header from "./Components/Header";
 
 function Routes() {
   return (
     <Router>
-      <div>
         <Switch>
           <Route path="/" exact component={Login} />
           <Route
@@ -21,7 +21,6 @@ function Routes() {
           <Route path="/home" exact component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
-      </div>
     </Router>
   );
 }

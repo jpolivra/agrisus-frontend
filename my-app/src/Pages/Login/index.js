@@ -1,18 +1,45 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import logo from "../../assets/logo_agrisus.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory  } from "react-router-dom";
 import Escolha from "../../Components/Escolha";
+import apiLogin from "../../Services/serviceLogin";
+
 
 function Login() {
   const [isCadastro, setIsCadastro] = useState(false);
 
-  function takeData() {
-    const userLogin = document.querySelector("#userLogin").value;
-    const userPass = document.querySelector("#userPass").value;
-    console.log(userLogin, userPass);
+  const [credenciais, setCredenciais] = useState({login: "", senha: ""});
+
+  let history = useHistory();
+
+  const login = () =>{
+    if(credenciais.login.length == 11){
+      apiLogin
+      .post("/pessoaFisica", credenciais)
+      .then((response) => { 
+        history.push("/loginRealizadoPessoaFisica")
+      })
+      .catch((err) => {
+        console.error("Credenciais incorretas" + err);
+      });
+    }else{
+      apiLogin
+      .post("/agricultor", credenciais)
+      .then((response) => { 
+        history.push("/loginRealizadoAgricultor")
+      })
+      .catch((err) => {
+        console.error("Credenciais incorretas" + err);
+      });
+    }
   }
+  
+
+  // useEffect(() => {
+  //   console.log(credenciais)
+  // }, [credenciais]);
 
   return (
     <div>
@@ -26,23 +53,22 @@ function Login() {
             <input
               type="text"
               id="userLogin"
-              name="Name"
               placeholder="Digite sua ID, e-mail ou cpf"
+              value={credenciais.login} onChange={(e) => setCredenciais((prevState => ({ ...prevState, login: e.target.value })))}
             />
             <label>SENHA</label>
             <input
               type="password"
               id="userPass"
-              name="Name"
               placeholder="Digite sua senha"
+              value={credenciais.senha} onChange={(e) => setCredenciais((prevState => ({ ...prevState, senha: e.target.value })))}
+
             />
           </div>
           <div className="switchLogin">
-            <Link to="/home">
-              <button onClick={takeData} className="button-yellow">
+              <button className="button-yellow" onClick={login}>
                 Entrar
               </button>
-            </Link>
             <button
               className="button-yellow"
               onClick={() => setIsCadastro(true)}
