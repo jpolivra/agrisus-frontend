@@ -1,0 +1,136 @@
+/* Nav and footer Placeholder */
+
+.nav-placeholder {
+  width: 100%;
+  height: 120px;
+  background: #004643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Home Styles */
+
+.home-background {
+  width: 100%;
+  min-height: 100vh;
+  background: #fffffe;
+}
+
+/* home header */
+
+.home-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+div.home-header h1 {
+  color: #001e1d;
+  font-size: 48px;
+}
+
+div.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+div.search-bar select {
+  background: #004643;
+  width: 270px;
+  height: 42px;
+  padding: 0px 20px;
+  color: #fffffe;
+  font-size: 18px;
+}
+
+.search-bg {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d9d9d9;
+  border-radius: 3px;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+.searchBar {
+  width: 320px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.search-icon {
+  width: 20px;
+  opacity: 0.2;
+}
+
+@media (max-width: 900px) {
+  .home-header {
+    flex-direction: column;
+  }
+  div.search-bar {
+    justify-content: space-between;
+  }
+  .searchBar {
+    max-width: 100%;
+    height: 40px;
+    margin-left: 8px;
+  }
+  .search-bg {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-header {
+    flex-direction: column;
+  }
+  div.search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .searchBar {
+    max-width: 100%;
+    height: 40px;
+    margin-left: 8px;
+  }
+  .search-bg {
+    max-width: 100%;
+  }
+}
+
+.produto-info-title {
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* Produtos Container */
+
+.produtos-container {
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  margin: 10px auto 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 90px;
+}
+
+@media (max-width: 1200px) {
+  .produtos-container {
+    justify-content: space-around;
+    margin-top: 0px;
+  }
+}

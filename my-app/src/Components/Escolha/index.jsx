@@ -5,8 +5,8 @@ import logo from "../../assets/logo_agrisus_cadastro.svg";
 
 function Escolha() {
   return (
-    <div class="home-nologin">
-      <div class="logo-div">
+    <div className="home-nologin">
+      <div className="logo-div">
         <img src={logo} alt="" />
       </div>
       <div className="escolhaParagrafo">

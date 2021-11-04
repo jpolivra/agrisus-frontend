@@ -119,3 +119,13 @@ select:focus {
   height: 40px;
   color: #004643;
 }
+
+@media (max-width: 769px) {
+  .linha {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .classInput {
+    width: 100%;
+  }
+}

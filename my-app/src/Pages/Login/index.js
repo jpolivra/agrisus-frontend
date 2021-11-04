@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import "./login.css";
+import "./style.css";
 import logo from "../../assets/logo_agrisus.svg";
+import { Link } from "react-router-dom";
 import Escolha from "../../Components/Escolha";
 
 function Login() {
@@ -37,9 +38,11 @@ function Login() {
             />
           </div>
           <div className="switchLogin">
-            <button onClick={takeData} className="button-yellow">
-              Entrar
-            </button>
+            <Link to="/home">
+              <button onClick={takeData} className="button-yellow">
+                Entrar
+              </button>
+            </Link>
             <button
               className="button-yellow"
               onClick={() => setIsCadastro(true)}
