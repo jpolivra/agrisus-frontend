@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import image_placeholder from "../../assets/image_placeholder.png";
-import rank from "../../assets/rank.png";
 
 const produtos = [
   {
@@ -15,7 +13,37 @@ const produtos = [
     price: "R$ 2.29 Kg",
   },
   {
-    id: 1,
+    id: 3,
+    name: "Cenoura",
+    price: "R$ 0.73 Kg",
+  },
+  {
+    id: 4,
+    name: "Milho",
+    price: "R$ 1.31 Kg",
+  },
+  {
+    id: 5,
+    name: "Tomate",
+    price: "R$ 2.29 Kg",
+  },
+  {
+    id: 6,
+    name: "Cenoura",
+    price: "R$ 0.73 Kg",
+  },
+  {
+    id: 7,
+    name: "Milho",
+    price: "R$ 1.31 Kg",
+  },
+  {
+    id: 8,
+    name: "Tomate",
+    price: "R$ 2.29 Kg",
+  },
+  {
+    id: 9,
     name: "Cenoura",
     price: "R$ 0.73 Kg",
   },
@@ -25,23 +53,22 @@ const lista = [];
 
 produtos.forEach((item) => {
   lista.push(
-    `<div className="product-background" id="${item.id}">
-      <img src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/image_placeholder.png" alt="" id="${item.id}" />
-      <div className="produto-info" id={item.id}>
-      <h1 id="${item.id}">Safra de ${item.name}</h1>
-      <p id="${item.id}">Em estoque</p>
-      <img id="${item.id}" src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/rank.png" className="rank" />
-      <p id="${item.id}" className="produto-price">
-        ${item.price}
-      </p>
-      <div id="${item.id}" className="produto-buttons">
-        <button id="${item.id}" className="button-first">
-          Tenho interesse
-        </button>
-        <button id="${item.id}">Mais informações</button>
-      </div>
-    </div>
-  </div>`
+    `
+      <img class="product-image" src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/image_placeholder.png" alt="" id="${item.id}" />
+      <div class="produto-info" id="${item.id}">
+        <h1 id="${item.id}" class="produto-info-title">Safra de ${item.name}</h1>
+        <p id="${item.id}">Em estoque</p>
+        <img id="${item.id}" src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/rank.png" class="rank" />
+        <p id="${item.id}" class="produto-price">
+          ${item.price}
+        </p>
+        <div id="${item.id}" class="produto-buttons">
+          <button id="${item.id}" class="button-first">
+            Tenho interesse
+          </button>
+          <button id="${item.id}">Mais informações</button>
+        </div>
+      </div>`
   );
 });
 
@@ -62,7 +89,10 @@ function Produto() {
   return (
     <div className="produtos-container" id="produtosLista">
       {items.map((item) => (
-        <div dangerouslySetInnerHTML={{ __html: item }} />
+        <div
+          className="product-background"
+          dangerouslySetInnerHTML={{ __html: item }}
+        />
       ))}
     </div>
   );

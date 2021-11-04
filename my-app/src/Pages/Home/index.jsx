@@ -7,8 +7,33 @@ import Footer from "../../Components/Footer";
 function Home() {
   //debug
 
+  const [identificador, setIdentificador] = useState(0);
+
+  function openModal(event) {
+    let productBg = document.querySelector(".modal-produto-info-bg");
+    setIdentificador(
+      identificador - identificador + event.target.getAttribute("id")
+    );
+    console.log(identificador);
+    productBg.style.display = "flex";
+    console.log(identificador);
+  }
+
+  function closeModal() {
+    let productBg = document.querySelector(".modal-produto-info-bg");
+    productBg.style.display = "none";
+  }
+
   return (
     <div className="home-background">
+      <div className="modal-produto-info-bg">
+        <div className="modal-produto-info">
+          <div onClick={closeModal} className="close-product-info">
+            <p onClick={closeModal}>X</p>
+          </div>
+          <h1>Produto de id {identificador * 1}</h1>
+        </div>
+      </div>
       <div className="nav-placeholder">
         <h1>Nav</h1>
       </div>
@@ -32,7 +57,10 @@ function Home() {
           </select>
         </div>
       </div>
-      <Produto />
+      <div onClick={openModal}>
+        <Produto />
+      </div>
+
       <Footer />
     </div>
   );
