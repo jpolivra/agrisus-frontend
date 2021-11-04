@@ -9,19 +9,17 @@ import NotFound from "./Pages/Not-Found/";
 function Routes() {
   return (
     <Router>
-      <div>
         <Switch>
-          <Route path="/" exact component={Login} />
-          <Route
-            path="/cadastroConsumidor"
-            exact
-            component={CadastroConsumidor}
-          />
-          <Route path="/cadastroProdutor" exact component={CadastroProdutor} />
-          <Route path="/home" exact component={Home} />
-          <Route path="*" component={NotFound} />
-        </Switch>
-      </div>
+        <Route path="/" exact component={Login} />
+        <Route
+          path="/cadastroConsumidor"
+          exact
+          component={CadastroConsumidor}
+        />
+        <Route path="/cadastroProdutor" exact component={CadastroProdutor} />
+         <Route path="/home" exact component={Home} />
+        <Route path="*" component={NotFound} />
+      </Switch>
     </Router>
   );
 }
