@@ -3,12 +3,11 @@
   height: 200px;
   background: #004643;
   display: flex;
-
   color: #fffffe;
   border-radius: 4px;
 }
 
-.produto-info {
+div.produto-info {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -48,7 +47,25 @@ button.button-first {
 }
 
 @media (max-width: 400px) {
-  .product-background img {
-    max-width: 35%;
+  .product-background {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 8px;
+  }
+  .product-background img.product-image {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+  }
+  .produto-buttons {
+    display: flex;
+    margin-top: 13px;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  .produto-buttons button {
+    height: 48px;
   }
 }
