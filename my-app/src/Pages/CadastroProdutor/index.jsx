@@ -20,8 +20,8 @@ function CadastroProdutor() {
       <div className="form">
         <div className="linha">
           <div className="classInput">
-            <label> Nome </label>
-            <input placeholder="Digite seu nome completo"></input>
+            <label> Nome da fazenda</label>
+            <input placeholder="Digite o nome da sua fazenda"></input>
           </div>
 
           <div className="classInput">
