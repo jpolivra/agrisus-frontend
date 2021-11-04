@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import Produto from "../../Components/Produto";
 import searchIcon from "../../assets/search-solid.svg";
-import Footer from "../../Components/Footer";
+
+import Header from "../../Components/Header";
 
 function Home() {
   //debug
@@ -34,9 +35,7 @@ function Home() {
           <h1>Produto de id {identificador * 1}</h1>
         </div>
       </div>
-      <div className="nav-placeholder">
-        <h1>Nav</h1>
-      </div>
+      <Header />
       <div className="home-header">
         <h1>Mercado</h1>
         <div className="search-bar">
@@ -60,8 +59,6 @@ function Home() {
       <div onClick={openModal}>
         <Produto />
       </div>
-
-      <Footer />
     </div>
   );
 }
