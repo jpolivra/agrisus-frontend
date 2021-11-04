@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
 import Produto from "../../Components/Produto";
 import searchIcon from "../../assets/search-solid.svg";
 import Footer from "../../Components/Footer";

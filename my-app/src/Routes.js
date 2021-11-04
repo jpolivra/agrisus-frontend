@@ -5,7 +5,9 @@ import CadastroConsumidor from "./Pages/CadastroConsumidor/";
 import CadastroProdutor from "./Pages/CadastroProdutor/";
 import Home from "./Pages/Home/";
 import NotFound from "./Pages/Not-Found/";
+import Header from "./Components/Header";
 import Equipe from "./Pages/Equipe/";
+
 
 function Routes() {
   return (
@@ -22,6 +24,7 @@ function Routes() {
         <Route path="/equipe" exact component={Equipe} />
         <Route path="*" component={NotFound} />
       </Switch>
+
     </Router>
   );
 }
