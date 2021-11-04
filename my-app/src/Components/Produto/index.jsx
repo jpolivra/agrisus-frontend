@@ -13,7 +13,37 @@ const produtos = [
     price: "R$ 2.29 Kg",
   },
   {
-    id: 1,
+    id: 3,
+    name: "Cenoura",
+    price: "R$ 0.73 Kg",
+  },
+  {
+    id: 4,
+    name: "Milho",
+    price: "R$ 1.31 Kg",
+  },
+  {
+    id: 5,
+    name: "Tomate",
+    price: "R$ 2.29 Kg",
+  },
+  {
+    id: 6,
+    name: "Cenoura",
+    price: "R$ 0.73 Kg",
+  },
+  {
+    id: 7,
+    name: "Milho",
+    price: "R$ 1.31 Kg",
+  },
+  {
+    id: 8,
+    name: "Tomate",
+    price: "R$ 2.29 Kg",
+  },
+  {
+    id: 9,
     name: "Cenoura",
     price: "R$ 0.73 Kg",
   },
@@ -25,7 +55,7 @@ produtos.forEach((item) => {
   lista.push(
     `
       <img class="product-image" src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/image_placeholder.png" alt="" id="${item.id}" />
-      <div class="produto-info">
+      <div class="produto-info" id="${item.id}">
         <h1 id="${item.id}" class="produto-info-title">Safra de ${item.name}</h1>
         <p id="${item.id}">Em estoque</p>
         <img id="${item.id}" src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/rank.png" class="rank" />
