@@ -18,76 +18,35 @@ const PageEquipe = () => {
           <S.boxDois>
             <S.imagemEquipe src={Mateus} />
             <S.textoDescricao>Mateus Mendes</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.textoDescricao>Desenvolvedor Full-Stack</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
-            <S.imagemEquipe src={Lucas} />
-            <S.textoDescricao>Lucas Rocha</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.imagemEquipe src={Leonardo} />
+            <S.textoDescricao>Leonardo Maia Assis Oliveira</S.textoDescricao>
+            <S.textoDescricao>Desenvolvedor Front-end</S.textoDescricao>
+            <S.textoDescricao>Scrum-Master</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
             <S.imagemEquipe src={Daniele} />
             <S.textoDescricao>Daniele Marques</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.textoDescricao>Desenvolvedora Front-end</S.textoDescricao>
           </S.boxDois>
         </S.boxUm>
         <S.boxUm>
           <S.boxDois>
             <S.imagemEquipe src={Diego} />
             <S.textoDescricao>Diego Marcolino</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.textoDescricao>Desenvolvedor Back-end</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
             <S.imagemEquipe src={Joao} />
             <S.textoDescricao>João Pedro Silva</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.textoDescricao>Desenvolvedor Front-end</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
-            <S.imagemEquipe src={Leonardo} />
-            <S.textoDescricao>Leonardo Maia Assis Oliveira</S.textoDescricao>
-            <S.textoDescricao>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              blandit magna. Nulla id lorem porta, pretium dolor eget, congue
-              nisl. Phasellus cursus venenatis tincidunt. Nunc sed magna velit.
-              In a ultrices magna. Duis pretium nibh diam, eu dictum nisi porta
-              eu. Donec facilisis tempor lectus, eget aliquam mi convallis non.
-              Praesent interdum, mauris quis dapibus facilisis, neque neque
-            </S.textoDescricao>
+            <S.imagemEquipe src={Lucas} />
+            <S.textoDescricao>Lucas Rocha</S.textoDescricao>
+            <S.textoDescricao>Desenvolvedor Back-end</S.textoDescricao>
           </S.boxDois>
         </S.boxUm>
       </S.containerEquipe>

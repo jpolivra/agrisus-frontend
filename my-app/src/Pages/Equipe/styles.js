@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const containerEquipe = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -11,16 +12,14 @@ export const containerEquipe = styled.div`
 export const boxUm = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 70%;
   height: 100%;
-  padding: 10px;
-  gap: 10px;
 `;
 
 export const boxDois = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   height: 100%;
   align-items: center;
 `;
@@ -35,8 +34,6 @@ export const textoDescricao = styled.h2`
   font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   font-weight: 400;
-  /* color: #001e1d; */
-  padding: 10px;
   text-align: center;
 `;
 
@@ -45,6 +42,5 @@ export const textoEquipe = styled.h1`
   font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   font-weight: 400;
-  /* color: #001e1d; */
   padding: 10px;
 `;
