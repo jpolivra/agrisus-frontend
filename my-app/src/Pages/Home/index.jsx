@@ -6,6 +6,15 @@ import searchIcon from "../../assets/search-solid.svg";
 import Header from "../../Components/Header";
 
 function Home() {
+  let productInfo = {
+    nome: "Tomate",
+    price: "R$ 1.29 Kg",
+    fazenda: "Fazenda Vale Verde",
+    motivacao: "lorem lorem lorem lorem lorem lorem lorem lorem lorem",
+    telefone: "75 9 8882839123",
+    endereco: "rua tal bairro tal",
+  };
+
   const [identificador, setIdentificador] = useState(0);
 
   function openModal(event) {
@@ -30,7 +39,21 @@ function Home() {
           <div onClick={closeModal} className="close-product-info">
             <p onClick={closeModal}>X</p>
           </div>
-          <h1>Produto de id {identificador * 1}</h1>
+          <div className="modal-container">
+            <img
+              className="product-info-img"
+              src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/milho_bg_big.png"
+              alt=""
+            />
+          </div>
+          <div className="product-info">
+            <h1>Safra de {productInfo.nome}</h1>
+            <p className="preco">{productInfo.price}</p>
+            <p className="fazenda">{productInfo.fazenda}</p>
+            <p className="motivacao">{productInfo.motivacao}</p>
+            <p className="telefone">Telefone: {productInfo.telefone}</p>
+            <p className="endereco">Endereço: {productInfo.endereco}</p>
+          </div>
         </div>
       </div>
       <Header />

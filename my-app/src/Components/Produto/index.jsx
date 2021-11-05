@@ -25,27 +25,22 @@ function Produto() {
             <img
               class="product-image"
               src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/image_placeholder.png"
-              alt=""
-              id="${item.id}"
             />
-            <div class="produto-info" id="${item.id}">
-              <h1 id="{item.id}" class="produto-info-title">
+            <div class="produto-info">
+              <h1 class="produto-info-title" nome={item.nome}>
                 Safra de {item.nome}
               </h1>
-              <p id="${item.id}">Em estoque</p>
+              <p>Em estoque</p>
               <img
-                id="${item.id}"
                 src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/rank.png"
                 class="rank"
               />
-              <p id="${item.id}" class="produto-price">
+              <p class="produto-price">
                 R$ {item.valor.toFixed(2).replace(".", ",")}
               </p>
-              <div id="${item.id}" class="produto-buttons">
-                <button id="${item.id}" class="button-first">
-                  Tenho interesse
-                </button>
-                <button id="${item.id}">Mais informações</button>
+              <div class="produto-buttons">
+                <button class="button-first">Tenho interesse</button>
+                <button>Mais informações</button>
               </div>
             </div>
           </div>
