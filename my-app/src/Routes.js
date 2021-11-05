@@ -7,6 +7,7 @@ import Home from "./Pages/Home/";
 import NotFound from "./Pages/Not-Found/";
 import { PageEquipe } from "./Pages/Equipe";
 import { PageSucesso } from "./Pages/PaginaSucesso";
+import { PageSobre } from "./Pages/Sobre";
 
 function Routes() {
   return (
@@ -20,6 +21,7 @@ function Routes() {
         />
         <Route path="/equipe" exact component={PageEquipe} />
         <Route path="/sucesso" exact component={PageSucesso} />
+        <Route path="/sobre" exact component={PageSobre} />
         <Route path="/cadastroProdutor" exact component={CadastroProdutor} />
         <Route path="/home" exact component={Home} />
         <Route path="*" component={NotFound} />
