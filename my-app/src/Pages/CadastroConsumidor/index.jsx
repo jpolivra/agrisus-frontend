@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./cadastro.css";
 import logo from "../../assets/logo_agrisus_cadastro.svg";
 import Checkbox from "@material-ui/core/Checkbox";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import apiUserFisico from "../../Services/serviceUserFisico";
 
 
@@ -11,11 +11,16 @@ function CadastroConsumidor() {
 
   const [newUser, setNewUser] = useState({ nome: "", cpf: "", endereco: "", telefone: "", senha: "" });
 
+  let history = useHistory();
+
 
   const postNewUser = () =>   {
     apiUserFisico
       .post("/usuarioFisico", newUser)
-      .then((response) => { console.log("deu certo")})
+      .then((response) => { 
+        console.log("deu certo")
+        history.push("/home?usuário")
+    })
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });

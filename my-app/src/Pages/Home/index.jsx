@@ -27,6 +27,9 @@ function Home() {
 
   return (
     <div className="home-background">
+
+      <Header />
+      <div className="container">
       <div className="modal-produto-info-bg">
         <div className="modal-produto-info">
           <div onClick={closeModal} className="close-product-info">
@@ -35,7 +38,6 @@ function Home() {
           <h1>Produto de id {identificador * 1}</h1>
         </div>
       </div>
-      <Header />
       <div className="home-header">
         <h1>Mercado</h1>
         <div className="search-bar">
@@ -56,9 +58,11 @@ function Home() {
           </select>
         </div>
       </div>
-      <div onClick={openModal}>
-        <Produto />
+
+            <Produto />
+
       </div>
+
     </div>
   );
 }

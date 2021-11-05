@@ -19,7 +19,7 @@ function Login() {
       apiLogin
       .post("/pessoaFisica", credenciais)
       .then((response) => { 
-        history.push("/loginRealizadoPessoaFisica")
+        history.push("/home?cliente")
       })
       .catch((err) => {
         console.error("Credenciais incorretas" + err);
@@ -28,7 +28,7 @@ function Login() {
       apiLogin
       .post("/agricultor", credenciais)
       .then((response) => { 
-        history.push("/loginRealizadoAgricultor")
+        history.push("/home?agricultor")
       })
       .catch((err) => {
         console.error("Credenciais incorretas" + err);

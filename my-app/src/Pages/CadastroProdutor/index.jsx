@@ -2,7 +2,7 @@ import React from "react";
 import "./cadastro.css";
 import logo from "../../assets/logo_agrisus_cadastro.svg";
 import Checkbox from "@material-ui/core/Checkbox";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import{ useState, useEffect } from "react";
 import apiAgricultor from "../../Services/serviceAgricultor";
 
@@ -10,10 +10,15 @@ function CadastroProdutor() {
 
   const [newAgricultor, setAgricultor] = useState({ nome: "", cnpj: "", endereco: "", telefone: "", senha: "", motivacao: "", imagem: "" });
 
+  let history = useHistory();
+
   const postNewAgricultor = () =>   {
     apiAgricultor
       .post("/agricultor", newAgricultor)
-      .then((response) => { console.log("deu certo")})
+      .then((response) => { 
+        console.log("deu certo")
+        history.push("/home?agricultor")
+      })
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });

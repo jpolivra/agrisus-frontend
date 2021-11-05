@@ -1,0 +1,104 @@
+.body-admin{
+    background: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.infos-agricultor{
+    width: 30%;
+    padding: 00px 15px;
+    margin-right: 15px;
+    margin-top: 10px ;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.foto-perfil{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.criar-produto{
+    background: #004643;
+    width: 70%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    padding-bottom: 2000px;
+}
+
+.titulo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulo-cadastro{
+    font-size: 2em;
+}
+
+.info-detalhe{
+    font-size: 1.2em;
+}
+
+.nota{
+    width: 100px;
+    height: 20px;
+}
+
+.informacoes-agricultor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.informacao-agricultor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.dados-agricultor{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}

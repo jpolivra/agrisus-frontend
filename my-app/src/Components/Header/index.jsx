@@ -3,6 +3,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './header.css'
 import logo from '../../assets/logo_agrisus.svg';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useHistory } from 'react-router-dom';
 
 <div className="logo-page">
     <img src={logo} />
@@ -12,6 +14,21 @@ import { Link } from "react-router-dom";
 
 
 export default function Header() {
+
+    const [pagina, setPagina] = useState("");
+
+    let location = useLocation();
+
+    let history = useHistory();
+
+    const mercado = () => {
+        history.push("/home")
+    }
+
+   
+   
+
+
     return (
 
         <div>
@@ -22,7 +39,10 @@ export default function Header() {
                             <div className="logo-page">
                                 <img src={logo} />
                                 <div className="divisoria"></div>
-                                <span>Início</span>
+                                {location.pathname == "/home" ?
+                                    <span>Home</span>
+                                    : <span>Painel de administrador</span>
+                                }
                             </div>
                         </Link>
                     </a>
@@ -32,7 +52,7 @@ export default function Header() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" >Mercado</a>
+                                <a className="nav-link" aria-current="page" onClick={mercado}>Mercado</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" >Ranking</a>

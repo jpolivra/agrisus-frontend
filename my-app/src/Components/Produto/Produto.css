@@ -1,0 +1,113 @@
+.produtos-api{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.produto{
+  width: 32%;
+}
+
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #004643;
+  margin: 10px 0px;
+}
+
+
+.imagem{
+  width: 30%;
+}
+
+.imagem img{
+  height: 100%;
+  width: 100%;
+}
+
+.conteudo-produto{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: start;
+}
+
+.conteudo-produto h4{
+  width: 100%;
+  text-align: start;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+.conteudo-produto h6{
+  width: 100%;
+  text-align: start;
+  margin: 0px;
+  padding: 0;
+  color: white;
+  font-size: 0.8em;
+}
+
+.conteudo-produto img{
+  margin: 5px 5px 5px 0px;
+  width: 70px;
+  height: 15px;
+}
+
+.conteudo-produto h5{
+  font-size: 1.2em;
+  color: white;
+  margin: 10px 0px;
+
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+  justify-content: center
+}
+
+.button-tenho-interesse{
+  text-align: center;
+  background: #F9BC60 ;
+  color: 001E1D;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  margin: 0px 5px;
+  font-size: 0.7em;
+}
+
+.button-mais-info{
+  text-align: center;
+  background: white ;
+  color: 001E1D;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  margin: 0px 5px;
+  font-size: 0.7em;
+}
+
+.agricultor{
+  display: flex;
+  justify-content: center;
+}
+
+.agricultor h5{
+  color: #F9BC60;
+}
+
+
+
+
+
