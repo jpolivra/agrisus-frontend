@@ -32,7 +32,7 @@ export const imagemEquipe = styled.img`
 export const textoDescricao = styled.h2`
   font-size: 20px;
   font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
   font-weight: 400;
   text-align: center;
 `;
@@ -40,7 +40,7 @@ export const textoDescricao = styled.h2`
 export const textoEquipe = styled.h1`
   font-size: 24px;
   font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
   font-weight: 400;
   padding: 10px;
 `;

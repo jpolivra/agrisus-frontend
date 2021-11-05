@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import Footer from "../../Components/Footer";
 import * as S from "./styles";
 import Mateus from "../../assets/equipe1.jpg";
 import Lucas from "../../assets/equipe2.jpg";
@@ -9,7 +7,7 @@ import Daniele from "../../assets/equipe4.jpg";
 import Joao from "../../assets/equipe5.jpg";
 import Leonardo from "../../assets/equipe6.jpg";
 
-const PageEquipe = () => {
+const Equipe = () => {
   return (
     <>
       <S.containerEquipe>
@@ -55,4 +53,4 @@ const PageEquipe = () => {
   );
 };
 
-export { PageEquipe };
+export default Equipe;
