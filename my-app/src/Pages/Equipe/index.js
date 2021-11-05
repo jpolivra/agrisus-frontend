@@ -21,7 +21,7 @@ const PageEquipe = () => {
             <S.textoDescricao>Desenvolvedor Full-Stack</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
-            <S.imagemEquipe src={Leonardo} />
+            <S.imagemEquipe src={Lucas} />
             <S.textoDescricao>Leonardo Maia Assis Oliveira</S.textoDescricao>
             <S.textoDescricao>Desenvolvedor Front-end</S.textoDescricao>
             <S.textoDescricao>Scrum-Master</S.textoDescricao>
@@ -44,7 +44,7 @@ const PageEquipe = () => {
             <S.textoDescricao>Desenvolvedor Front-end</S.textoDescricao>
           </S.boxDois>
           <S.boxDois>
-            <S.imagemEquipe src={Lucas} />
+            <S.imagemEquipe src={Leonardo} />
             <S.textoDescricao>Lucas Rocha</S.textoDescricao>
             <S.textoDescricao>Desenvolvedor Back-end</S.textoDescricao>
           </S.boxDois>
