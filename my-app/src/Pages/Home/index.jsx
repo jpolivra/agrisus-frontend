@@ -6,8 +6,6 @@ import searchIcon from "../../assets/search-solid.svg";
 import Header from "../../Components/Header";
 
 function Home() {
-  //debug
-
   const [identificador, setIdentificador] = useState(0);
 
   function openModal(event) {

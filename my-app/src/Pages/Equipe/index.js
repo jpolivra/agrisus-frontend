@@ -48,7 +48,6 @@ const Equipe = () => {
           </S.boxDois>
         </S.boxUm>
       </S.containerEquipe>
-      <Footer></Footer>
     </>
   );
 };

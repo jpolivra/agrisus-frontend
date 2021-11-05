@@ -1,78 +1,72 @@
-
-
-.navbar-light .navbar-nav .nav-link{
-    color: white;
-    margin-top: 6px;
-    cursor: pointer;
-    transition: 0.7s;
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: 0.7s;
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #f9bc60;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f9bc60;
 }
 
-.navbar-expand-lg .navbar-collapse{
-    justify-content: end;
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/1f33e778ad9fc9391339b177dfa7fc2fc4670c08/my-app/src/assets/hamMenu.svg");
-    }
-
-.nav{
-    display: flex;
-    flex-direction: row;
+  background-image: url("https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/1f33e778ad9fc9391339b177dfa7fc2fc4670c08/my-app/src/assets/hamMenu.svg");
 }
 
-img{
-    width: 90px;
-    height: 60px;
+.nav {
+  display: flex;
+  flex-direction: row;
 }
 
-.logo-page{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+img.nav-logo-default {
+  width: 90px;
+  height: 60px;
 }
 
-.logo-page span{
-    color: white;
+.logo-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.divisoria{
-    height: 60px;
+.logo-page span {
+  color: white;
 }
 
-span{
-    font-size: 0.8em;
-    margin-top: 6px;
+.divisoria {
+  height: 60px;
 }
 
-.bg-light{
-    background-color: #004643 !important;
+span {
+  font-size: 0.8em;
+  margin-top: 6px;
 }
 
-.navbar-light{
-    background-color: #004643;
+.bg-light {
+  background-color: #004643 !important;
 }
 
-.navbar{
-    display: flex;
-    width: 100%;
+.navbar-light {
+  background-color: #004643;
 }
 
-.navbar-toggler-icon{
-    color: white !important;
+.navbar {
+  display: flex;
+  width: 100%;
 }
 
-.navbar-toggler{
-    color: white !important;
+.navbar-toggler-icon {
+  color: white !important;
 }
 
-a{
-    text-decoration: none;
+.navbar-toggler {
+  color: white !important;
 }
 
-
-
-
+a {
+  text-decoration: none;
+}
