@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./cadastro.css";
 import logo from "../../assets/logo_agrisus_cadastro.svg";
@@ -64,7 +65,9 @@ function CadastroProdutor() {
       </div>
 
       <div className="botao">
-        <button className="button-yellow">Cadastrar</button>
+      <Link to="/sucesso">
+      <button className="button-yellow">Cadastrar</button>
+      </Link>
       </div>
     </div>
   );

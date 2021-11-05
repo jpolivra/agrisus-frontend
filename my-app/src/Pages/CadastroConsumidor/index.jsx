@@ -57,7 +57,9 @@ function CadastroConsumidor() {
       </div>
 
       <div className="botao">
-        <button className="button-yellow">Cadastrar</button>
+      <Link to="/sucesso">
+      <button className="button-yellow">Cadastrar</button>
+      </Link>
       </div>
     </div>
   );

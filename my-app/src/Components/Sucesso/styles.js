@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, #004643 0%, #012f2d 100%);
+  align-items: center;
+  width: 50%;
+  height: 50%;
 `;
 
 export const imagemSucess = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 `;
 
 export const textoSucess = styled.h1`
