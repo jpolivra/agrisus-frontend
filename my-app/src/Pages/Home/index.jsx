@@ -15,16 +15,16 @@ function Home() {
     endereco: "rua tal bairro tal",
   };
 
-  const [identificador, setIdentificador] = useState(0);
-
   function openModal(event) {
     let productBg = document.querySelector(".modal-produto-info-bg");
-    setIdentificador(
-      identificador - identificador + event.target.getAttribute("id")
-    );
-    console.log(identificador);
+    let productName = document.querySelector("#productName");
+    let productPrice = document.querySelector("#productPrice");
+    productInfo.nome = `Safra de ${event.target.getAttribute("nome")}`;
+    productInfo.price = `R$ ${event.target.getAttribute("price")}`;
     productBg.style.display = "flex";
-    console.log(identificador);
+    productName.innerText = productInfo.nome;
+    productPrice.innerText = productInfo.price;
+    console.log(productInfo.nome);
   }
 
   function closeModal() {
@@ -47,12 +47,14 @@ function Home() {
             />
           </div>
           <div className="product-info">
-            <h1>Safra de {productInfo.nome}</h1>
-            <p className="preco">{productInfo.price}</p>
-            <p className="fazenda">{productInfo.fazenda}</p>
-            <p className="motivacao">{productInfo.motivacao}</p>
-            <p className="telefone">Telefone: {productInfo.telefone}</p>
-            <p className="endereco">Endereço: {productInfo.endereco}</p>
+            <h1 id="productName">default</h1>
+            <p id="productPrice" className="preco">
+              default
+            </p>
+            <p id="productFazenda">{productInfo.fazenda}</p>
+            <p id="productMotivacao">{productInfo.motivacao}</p>
+            <p id="productTelefone">Telefone: {productInfo.telefone}</p>
+            <p id="productEndereco">Endereço: {productInfo.endereco}</p>
           </div>
         </div>
       </div>

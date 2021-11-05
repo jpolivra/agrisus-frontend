@@ -27,7 +27,11 @@ function Produto() {
               src="https://raw.githubusercontent.com/thxjao/Agrisus-Frontend/master/my-app/src/assets/image_placeholder.png"
             />
             <div class="produto-info">
-              <h1 class="produto-info-title" nome={item.nome}>
+              <h1
+                class="produto-info-title"
+                nome={item.nome}
+                price={item.valor}
+              >
                 Safra de {item.nome}
               </h1>
               <p>Em estoque</p>
